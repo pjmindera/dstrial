@@ -3,9 +3,7 @@ const docusign = require("docusign-esign"),
   fs = require("fs"),
   { promisify } = require("util"), // http://2ality.com/2017/05/util-promisify.html
   basePath = "https://demo.docusign.net/restapi";
-// baseUrl is the url of the application's web server. Eg http://localhost:3000
-// In some cases, this example can determine the baseUrl automatically.
-// See the baseUrl statements at the end of this example.
+
 let baseUrl = "http://localhost:3000";
 
 exports.homey = function (req, res) {
